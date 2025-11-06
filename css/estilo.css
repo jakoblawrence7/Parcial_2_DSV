@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Montserrat, sans-serif;
-    background-color: #484848;
+    background-color: #eaeaea;
     color: #000000;
 }
 
@@ -76,6 +76,8 @@ main {
     padding-top: 120px;
     width: 1200px;
     margin: 0 auto;
+    border-left: #000000 solid 2px;
+    border-right: #000000 solid 2px;
 }
 
 main h1 {
@@ -90,7 +92,8 @@ main h2{
     margin-bottom: 10px;
 }
 
-main p {    
+main p {
+    margin-top: 10px;    
     color: #000000;
 }
 
@@ -133,16 +136,33 @@ main button:visited {
     flex-direction: column;
 }
 
-#info{
+#info {
     max-width: 1000px;
-    text-align: left;
-    padding: 10px 10px;
     color: #000000;
-    background-color: #dfdfdf;
+    background-color: #ffffff;
+    border: #000000 solid 2px;
+    margin: 10px;
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
-#info h3{
-    margin-bottom: 10px;
+#info :hover{
+
+}
+
+#info-contenido{
+    margin: 10px;
+}
+
+#info-img{
+    padding: 0;
+    border-left: #000000 solid 2px;
+    text-align: right;
+    height: 150px;
+}
+
+#info-img img{
+    height: 100%;
 }
 
 #descripcion{
@@ -151,6 +171,7 @@ main button:visited {
     margin-bottom: 15px;
 }
 
+
 footer {
     background-color: #ffffff;
     color: #000000;
@@ -158,4 +179,5 @@ footer {
     padding: 15px 0;
     margin-top: 3.0px;
     border-top: #000000 2px solid;
+    width: 100%;
 }
