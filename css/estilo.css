@@ -92,11 +92,6 @@ main h2{
     margin-bottom: 10px;
 }
 
-main p {
-    margin-top: 10px;    
-    color: #000000;
-}
-
 #boton{
     text-align: center;
     margin-top: 15px;
@@ -163,9 +158,13 @@ main button:visited {
 #descripcion{
     max-width: 1000px;
     margin-top: 10px;
-    margin-bottom: 15px;
+    color: #000000;
 }
 
+#imagen-centro img{
+    width: 150px;
+    border: #000000 solid 2px;
+}
 
 footer {
     background-color: #ffffff;
