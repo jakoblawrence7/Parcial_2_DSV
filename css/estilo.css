@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -22,13 +27,20 @@ header {
     left: 0;
     height: 100px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     border-bottom: 2px solid #000000;
     z-index: 1000;
 }
 
-nav img {
-    text-align: left;
+header #logo{
+    position: absolute;
+    left: 20px;
+}
+
+header #logo img {
     height: 50px;
 }
 
@@ -40,18 +52,21 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
     gap: 20px;
     padding: 10px 0;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
     padding: 8px 16px;
-    border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 main {
@@ -59,7 +74,7 @@ main {
     background-color: #ffffff;
     padding: 20px;
     padding-top: 120px;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -87,13 +102,30 @@ main p {
 main button {
     background-color: #000000;
     color: #ffffff;
-    text-decoration: none;
     border: none;
     padding: 10px 20px;
+    margin-top: 5px;
     border-radius: 7.5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: transform 0.3s ease;
 }
+
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+main button:hover {
+    transform: scale(1.1);
+}
+
+
+main button:visited {
+    color: #ffffff;
+}
+
 #contenedor{
     display: flex;
     justify-content: center;
